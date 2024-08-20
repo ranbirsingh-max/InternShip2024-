@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+     
+        
+        .header {
+            display: flex;
+            gap: 20px;
+            position: relative;
+            width: 100%;
+            background-color: #010A35;
+           
+        }
+        .links {
+            position: absolute;
+            right: 6%;
+            display: flex;
+            gap: 20px;
+            top: 18px;
+        }
+        .a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+        .p {
+            padding-left: 40px;
+        }
+        .navbar {
+            
+            background-color: white;
+            position: relative;
+            height: 80px;
+            width: 100%;
+            
+        }
+        .main{
+            overflow: hidden;
+        }
+        .navbar-links {
+            border: 2px dotted orange;
+            position: absolute;
+            right: 40%;
+            display: flex;
+            gap: 20px;
+            top: 25px;
+            padding: 10px 10px;
+        }
+        .b {
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .icons {
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            right: 9%;
+            top: 25px;
+            color: orange;
+            font-size: 25px;
+        }
+        .b:hover {
+            color: orange;
+            background-color: #F6F7F8;
+        }
+        h1 {
+            position: absolute;
+            top: -4px;
+        }
+        .img-1 {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .container {
+            height: 200px;
+            position: absolute;
+            top: 330px;
+            right: 18%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .two, .three {
+            position: relative;
+        }
+        .two::before, .three::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(2, 17, 79, 0.5);
+            z-index: 1;
+        }
+        .head {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .text {
+            color: #7F8499;
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        .li {
+            background-color: #F6F7F8;
+            padding: 10px 10px;
+            border-radius: 70%;
+        }
+        .page-1 {
+            height: 100%;
+            width: 53%;
+            position: relative;
+            padding-bottom: 80px;
+            
+        }
+        h2{ display: flex;
+            align-items: center;
+        }
+        .page-a, .top {
+            font-family: "Roboto Slab", serif;
+            padding-top: 65px;
+            padding-left: 53px;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #010A35;
+        }
+        .page-b, h2 {
+            font-family: "Roboto Slab", serif;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #010A35;
+        }
+        .page-b{
+            display: flex;
+            gap: 120px;
+            padding-left: 100px;
+        }
+        .page-c{
+            display: flex;
+            padding-left: 100px;
+            gap: 240px;
+            font-family: "Roboto Slab", serif;
+            align-items: center;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #010A35;
+        }
+    .fas{
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: orangered;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+    .page-box{
+        display: flex;
+    }
+    .image-section{
+        width: 47%;
+    }
+    .image-1{
+        display: flex;
+        align-items: end;
+    
+        padding-top: 65px;
+    }
+    .image-2{
+        display: flex;
+        align-items: start;
+        gap: 20px;
+    }
+    
+    .boxes{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        justify-content: center;
+    }
+    .box-1 img {
+        margin-bottom: 10px;
+    }
+    .box-1 p {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .box-1 img {
+    display: block; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.box-1 p {
+    height: 80px;
+    font-size: 30px;
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.box-1 p:hover{
+    color: orangered;
+
+}
+ </style>
+</head>
+<body>
+    <nav class="header">
+        <p class="p" style="color: rgba(255, 255, 255, 0.5);"><i class="fa fa-phone" aria-hidden="true"></i> +012 345 6789</p>
+        <p class="p" style="color: rgba(255, 255, 255, 0.5);"><i class="fa fa-envelope" aria-hidden="true"></i> info@example.com</p>
+        <div class="links">
+            <a class="a" href="#">Home /</a>
+            <a class="a" href="#">Terms /</a>
+            <a class="a" href="#">Privacy /</a>
+            <a class="a" href="#">Support</a>
+        </div>
+    </nav>
+
+    <div class="navbar">
+        <h1 style="color: rgb(1, 10, 53); font-size: 40px;">
+            <img src="https://themewagon.github.io/aircon/img/icon/icon-02-primary.png" alt="Logo"> AirCon
+        </h1>
+        <div class="navbar-links">
+            <a class="b" href="#">Home</a>
+            <a class="b" href="#">About Us</a>
+            <a class="b" href="#">Our Services</a>
+            <a class="b" href="#">Pages</a>
+            <a class="b" href="#">Contact Us</a>
+        </div>
+        <div class="icons">
+            <div class="li">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="li">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="li">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <div class="li">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="two">
+            <img class="img-1" src="https://themewagon.github.io/aircon/img/carousel-1.jpg" alt="Slide 1">
+            <div class="container">
+                <div class="head">We Provide Best Ac Repair <br> Services</div>
+                <p class="text">"Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet"</p>
+                <a href="#" style="font-weight: 400; text-align: center; vertical-align: middle; font-size: 1rem; background-color: orange; color: white; padding: 23px 50px; text-decoration: none;">Explore More</a>
+            </div>
+        </div>
+        <div class="three">
+            <img class="img-1" src="https://themewagon.github.io/aircon/img/carousel-2.jpg" alt="Slide 2">
+            <div class="container">
+                <div class="head">Quality Heating & Air <br>Condition Services</div>
+                <p class="text">"Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet"</p>
+                <a href="#" style="font-weight: 400; text-align: center; vertical-align: middle; font-size: 1rem; background-color: orange; color: white; padding: 23px 50px; text-decoration: none;">Explore More</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('.main').slick({
+                dots: true,
+                infinite: false,
+                autoplay:true,
+                autoplayspeed:0,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+
+   
+<!-----------------------------------------------------PAGE2--------------------------------------------------------------------------->
+<div class="page-box">
+<div class="page-1">
+        <div class="page-a">
+            <p class="top">Welcome To Best Cooling & <br> Heating Service Experience</p>
+        </div>
+        <div class="page-b">
+            <h2><img src="https://themewagon.github.io/aircon/img/icon/icon-07-primary.png" >Expert Technician</h2>
+            <h2> <img src="https://themewagon.github.io/aircon/img/icon/icon-09-primary.png"> Quality Services</h2>
+        </div>
+        <p style="color: #7F8499; font-size: 1.25rem; padding-left: 70px;">  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam <br> amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita<br> duo justo magna dolore erat amet</p>
+        <hr>
+        <div class="page-c">
+            <p > <i class="fa fa-phone fas" aria-hidden="true" style="color: #F6F7F8;"></i>+012 345 678</p>
+            <p"> <i class="fa fa-envelope fas" aria-hidden="true" style="color: #F6F7F8;"></i>info@email.com</p>
+        </div>
+    </div>
+
+    <!------------------------------------------------------PAGE3---------------------------------------------------------------->
+    <div class="images-section">
+        <div class="image-1">
+        <img src="https://themewagon.github.io/aircon/img/about-1.jpg" style="height: 200px; width: 220px;">
+        <img src="https://themewagon.github.io/aircon/img/about-2.jpg" style="height: 310px; width: 290px; padding-left: 20px;">
+    </div>
+        <div class="image-2">
+            <img src="https://themewagon.github.io/aircon/img/about-3.jpg" style="height: 170px; padding-left: 50px;">
+            <img src="https://themewagon.github.io/aircon/img/about-4.jpg" style="height: 220px;">
+        </div>
+    </div>
+    </div>
+    <!--------------------------------------------------PAGE4-------------------------------------------------------------------------->
+    <div class="boxes">
+        <div class="box-1" style="width: 407.99px;">  
+        <img  style="width: 100%;" src="https://themewagon.github.io/aircon/img/service-1.jpg">
+            <p style="font-size: 30px; background-color:  rgb(246, 247, 248);">   <img src="https://themewagon.github.io/aircon/img/icon/icon-01-light.png " style="background-color: orangered;">  AC Installation</p>  
+    </div>
+        <div  class="box-1" style="width: 407.99px;"> 
+            <img style="width: 100%;" src="https://themewagon.github.io/aircon/img/service-2.jpg"> 
+            <p style="font-size: 30px; background-color:  rgb(246, 247, 248);"><img src="https://themewagon.github.io/aircon/img/icon/icon-02-light.png" style="background-color: orangered;"> Cooling Services</p>
+        </div>
+        <div class="box-1" style="width: 407.99px;"> 
+            <img style="width: 100%;" src="https://themewagon.github.io/aircon/img/service-3.jpg"> 
+            <p style="font-size: 30px; background-color:  rgb(246, 247, 248);"><img src="https://themewagon.github.io/aircon/img/icon/icon-03-light.png" style="background-color: orangered;"> Heating Services</p>
+        </div>
+        <div class="box-1" style="width: 407.99px;"> 
+            <img style="width: 100%;" src="https://themewagon.github.io/aircon/img/service-4.jpg">
+            <p style="font-size: 30px; background-color:  rgb(246, 247, 248);"><img src="https://themewagon.github.io/aircon/img/icon/icon-04-light.png" style="background-color: orangered;"> Maintenance & Repair</p>
+        </div>
+        <div class="box-1" style="width: 407.99px;"> 
+            <img style="width: 100%;" src="https://themewagon.github.io/aircon/img/service-5.jpg">
+            <p style="font-size: 30px; background-color:  rgb(246, 247, 248);"><img src="https://themewagon.github.io/aircon/img/icon/icon-04-light.png" style="background-color: orangered;"> Indoor Air Quality</p>
+        </div>
+        <div class="box-1" style="width: 407.99px;"> 
+            <img style="width: 100%;" src="https://themewagon.github.io/aircon/img/service-6.jpg">
+            <p style="font-size: 30px; background-color:  rgb(246, 247, 248);"><img src="https://themewagon.github.io/aircon/img/icon/icon-06-light.png " style="background-color: orangered;"> Annual In</p>
+        </div>   
+
+    </div>
+</body>
+</html>

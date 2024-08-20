@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .box {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .circle {
+            position: absolute;
+            left: 50%;
+            bottom: -25%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid black;
+            background-color: aqua;
+        }
+        .para {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            color: rgb(174, 28, 115);
+            margin-bottom: 20px;
+        }
+        .button {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: white;
+            background-color: rgb(174, 28, 115);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: rgb(140, 20, 92);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="para">Life is full of both joys and disasters. The ups and downs of life are what they're called. Without them, life is just a never-ending war that can be won at any time. To overcome one's grief, it is necessary to find happiness in one's life.</p>
+        <button class="button">View more...</button>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

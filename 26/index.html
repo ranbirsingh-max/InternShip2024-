@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Practice</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .boxes{
+          display: flex;
+        }
+        .nav-bar {
+    height: 59px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+body {
+    margin-top: 59px; 
+}
+        .nav-bar a{
+            color: white;
+        }
+        .img{
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img img {
+            max-height: 100%;
+            max-width: 100%;
+           border: 4px solid white;
+           border-radius: 15px;
+        }
+        .container{
+            display: flex;
+            background-color: black;
+            padding: 50px 0;
+        }
+        
+        
+        .form-1 {
+            width: 700px;
+            background-color: rgb(162, 140, 184);
+            border: 2px solid white;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            margin: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .form-1 .form-label {
+          font-size: larger;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-1 .form-control {
+          width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: medium;
+        }
+        .form-1 .form-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-1 .form-check input {
+            margin-right: 10px;
+        }
+        .form-1 .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: larger;
+            cursor: pointer;
+        }
+        .form-1 .submit-button:hover {
+            background-color: rgb(34, 34, 34);
+        }
+        .form-1 .form-text {
+            color: white;
+            font-size: small;
+            margin-top: -8px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .box{
+            background-color: rgb(213, 186, 204);
+            border: 4px solid black;
+          padding-top: 70px;
+            
+            text-align: center;
+            position: relative;
+           
+        }
+        .box p{
+            font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .pos{
+          height: 200px;
+          width: 200px;
+          background-color: cadetblue;
+          border-radius: 100%;
+          position: absolute;
+          left: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .pos2{
+          height: 200px;
+          width: 200px;
+          background-color: cadetblue;
+          border-radius: 100%;
+          position: absolute;
+          top: -90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <!----------------------------------------------------------------------- SECTION1---NAVBAR- ----------------------------------------------------------------------------------->
+    
+    <nav class="nav-bar">
+        <div >
+        <i class="fa fa-cutlery food" aria-hidden="true"></i>
+        <a class="GOFOOD" href="#">GOFOOD</a>
+    </div>
+              <a  href="#">Home <span class="sr-only">(current)</span></a>
+              <a  href="#">About</a>
+              <a  href="#">Contact</a>
+          <form class="form">
+            <input class="input" type="search" placeholder="Type">
+            <button class="btn" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> 
+      <!--------------------------------------------------------------------SECTION2---SLIDER----------------------------------------------------------------------->
+     
+      <div class="main">
+        <div class="img">
+            <img class="image" src="https://static.vecteezy.com/system/resources/thumbnails/026/722/420/small_2x/illustration-of-indian-national-food-view-from-above-generative-ai-photo.jpg " alt="">
+        </div>
+
+        <div class="img">
+            <img   class="image" src="https://t4.ftcdn.net/jpg/02/84/46/89/360_F_284468940_1bg6BwgOfjCnE3W0wkMVMVqddJgtMynE.jpg" alt="">
+        </div>
+
+        <div class="img">
+            <img  class="image" src="https://static.vecteezy.com/system/resources/thumbnails/026/722/420/small_2x/illustration-of-indian-national-food-view-from-above-generative-ai-photo.jpg" alt="">
+        </div>
+
+        <div class="img">
+            <img  class="image" src="https://st4.depositphotos.com/1000589/30118/i/450/depositphotos_301181378-stock-photo-assorted-indian-food-on-black.jpg" alt="">
+        </div>
+        <div class="img">
+            <img   class="image" src=" https://media.istockphoto.com/id/177043240/photo/indian-butter-chicken-curry.jpg?s=612x612&w=0&k=20&c=GnqnIWq99zDdjmOWQg0L7p3eKJTQO_bxnJTVbf8PlpM=" alt="">
+        </div>
+        <div class="img">
+            <img   class="image" src="https://t3.ftcdn.net/jpg/01/54/14/86/360_F_154148685_yvijeC6L2SFpvqFJ5H1lunPg40FzCAf1.jpg " alt="">
+        </div>
+
+     </div>
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+          
+  $('.main').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      
+    ]
+  });
+
+
+  </script>
+  <div class="container">
+  <div class="map" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6860.714394971766!2d76.70967590925751!3d30.70835713637045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722012073845!5m2!1sen!2sin" width="800" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+        <form class="form-1">
+            <div class="userName">
+                <label for="userName" class="form-label">UserName</label>
+                <input type="text" class="form-control" id="InputName" placeholder="userName">
+            </div>
+            <div class="email">
+              <label for="InputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="email">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="password">
+              <label for="InputPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-control" id="exampleCheck1" name="html">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit"  class="submit-button">Submit</button>
+          </form>
+    
+
+  </div>
+</div>
+<div class="boxes">
+  <div class="box">
+    <i class="fa fa-link" aria-hidden="true"></i>
+    <h1>1</h1>
+    <p>“The most important thing is to enjoy your life—to be happy—it’s all that matters.” —Steve Jobs</p>
+    <div class="pos">
+      Keep
+    </div>
+</div>
+
+<div class="box">
+    <i class="fa fa-link" aria-hidden="true"></i>
+    <h1>2</h1>
+   <p>“I can accept failure, everyone fails at something. But I can’t accept not trying.” —Michael Jordan</p>
+   <div class="pos2">
+    Calm
+  </div>
+</div>
+
+<div class="box">
+    <i class="fa fa-link" aria-hidden="true"></i>
+    <h1>3</h1>
+    <p>“Confident people have a way of carrying themselves that makes others attracted to them.” —Sofia Vergara</p>
+    <div class="pos">
+      And
+    </div>
+</div>
+<div class="box">
+  <i class="fa fa-link" aria-hidden="true"></i>
+  <h1>4</h1>
+  <p>“The more you know who you are, and what you want, the less you let things upset you.” —Stephanie Perkins</p>
+  <div class="pos2">
+    Carry on
+  </div>
+</div>
+</div>
+
+</body>
+</html>

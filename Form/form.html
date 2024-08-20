@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            background-image: url('https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg');
+        }
+        .form-practice{
+            width: 23%;
+            background-color: rgb(124, 127, 100);
+            border: 2px solid white;
+            padding: 20px;
+            margin: auto;
+            margin-top: 300px;
+        }
+        .form-label{
+            font-size: larger;
+            font-weight: 450;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .userName{
+            padding: 4px;
+        }
+        .email{
+            padding: 4px;
+        }
+        .password{
+            padding: 4px;
+        }
+        .form-check{
+            padding: 4px;
+        }
+        .form-control{
+            border: 2px solid black;
+        }
+        .form-text{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-practice">
+        <form>
+            <div class="userName">
+                <label for="userName" class="form-label">UserName</label>
+                <input type="text" class="form-control" id="InputName" placeholder="userName">
+            </div>
+            <div class="email">
+              <label for="InputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="email">
+              <div id="emailHelp" clsas="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="password">
+              <label for="InputPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-control" id="exampleCheck1" name="html">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit"  class="submit-button">Submit</button>
+          </form>
+    </div>
+</body>
+</html>

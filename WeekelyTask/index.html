@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        
+        .bg {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*NVtHKj_psvX0lXcy4FVX7A.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+
+        .main {
+            background-color: aliceblue;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+        }
+
+        
+
+        table{
+            
+            width: 60%;
+            text-align: center;
+            text-transform: capitalize;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            
+        }
+        th,td{
+            border: 2px solid red;
+        }
+        th {
+            background-color: #ff6f61;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        tr:hover {
+            background-color: #ff6f61;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .tab{
+            background-color:black;
+        }
+        #last{
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;
+            background-blend-mode:lighten;
+            color: #fff;
+
+            background-image: url('https://dlrleisure.ie/wp-content/uploads/2015/05/home-testimonial-bg.jpg');
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px; 
+        }
+        button:hover {
+            background-color: #e0554f;
+        }
+    </style>
+</head>
+<body>
+    <!----------------------------------------------------------------Section1---------------------------------------------->
+    <div class="bg">
+    <div class="main">
+        <p>
+            "Your self-worth is determined by you. ..."
+            <button>Button</button>
+        </p>
+    </div>
+</div>
+<!---------------------------------------------------------------------Section2---------------------------------------->
+<div class="tab">
+    <table>
+        <tr>
+          <th> Name</th>
+          <th> Year</th>
+          <th> Roll No.</th>
+        <th>  Section</th>
+        </tr>
+        <tr>
+            <td>Ranbir</td>
+            <td>4th</td>
+            <td>129</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Tanisha</td>
+            <td>4th</td>
+            <td>029</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Lovish</td>
+            <td>4th</td>
+            <td>151</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Mansi</td>
+            <td>4th</td>
+            <td>152</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Shivam</td>
+            <td>4th</td>
+            <td>133</td>
+            <td>B</td>
+        </tr>
+    </table>
+    
+</div>
+<!----------------------------------------------------------------Section3---------------------------------->
+<div id="last">
+Hor r you 
+</div>
+</body>
+</html>
